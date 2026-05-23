@@ -1,0 +1,640 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Calibri, Arial, sans-serif;
+}
+
+
+
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+  background:
+  linear-gradient(
+  to bottom,
+  #fcfcfd,
+  #bfc4ff
+  );
+
+  color:#000;
+
+}
+
+
+
+
+
+/* ==========================================
+   TOPO
+========================================== */
+
+.topo{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:20px 7%;
+
+  background:white;
+
+  box-shadow:
+  0 4px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:10px;
+
+}
+
+
+
+.logo h2{
+
+  color:#040b18;
+
+  font-size:35px;
+
+}
+
+
+
+.logo p{
+
+  color:#020202;
+
+  font-size:16px;
+
+}
+
+
+
+.cube{
+
+  font-size:28px;
+
+  color:#4d80af;
+
+}
+
+
+
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+nav a{
+
+  margin:0 15px;
+
+  text-decoration:none;
+
+  color:#1c2d4a;
+
+  font-weight:600;
+
+}
+
+
+
+
+
+/* ==========================================
+   BOTÃO ENTRAR
+========================================== */
+
+.btn-entrar{
+
+  background:#2f80ed;
+
+  color:white;
+
+  border:none;
+
+  padding:10px 20px;
+
+  border-radius:20px;
+
+  cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:40px 8%;
+
+}
+
+
+
+
+
+/* ==========================================
+   TEXTOS HERO
+========================================== */
+
+.hero-text h1{
+
+  font-size:58px;
+
+  font-weight:800;
+
+}
+
+
+
+.hero-text h2{
+
+  font-size:34px;
+
+  color:#1455ac;
+
+  margin-top:10px;
+
+}
+
+
+
+.hero-text p{
+
+  margin-top:12px;
+
+  font-size:20px;
+
+}
+
+
+
+
+
+/* ==========================================
+   IMAGEM HERO
+========================================== */
+
+.hero-image img{
+
+  width:490px;
+
+}
+
+
+
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.titulo-area{
+
+  text-align:center;
+
+  margin-top:20px;
+
+}
+
+
+
+.titulo-area h3{
+
+  color:#2f80ed;
+
+  font-size:22px;
+
+}
+
+
+
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.cards{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:30px;
+
+  flex-wrap:wrap;
+
+  padding:35px 6%;
+
+}
+
+
+
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+
+  width:290px;
+
+  background:white;
+
+  border:2px solid #d8e6ff;
+
+  border-radius:18px;
+
+  padding:30px 20px;
+
+  text-align:center;
+
+  box-shadow:
+  0 10px 25px rgba(47,128,237,0.15);
+
+  transition:0.3s;
+
+}
+
+
+
+/* HOVER */
+
+.card:hover{
+
+  transform:translateY(-10px);
+
+  box-shadow:
+  0 18px 35px rgba(47,128,237,0.22);
+
+}
+
+
+
+
+
+/* ==========================================
+   ÍCONE CARD
+========================================== */
+
+.icon{
+
+  font-size:40px;
+
+  margin-bottom:15px;
+
+}
+
+
+
+
+
+/* ==========================================
+   TÍTULO CARD
+========================================== */
+
+.card h4{
+
+  font-size:20px;
+
+  color:#204d96;
+
+  margin-bottom:12px;
+
+}
+
+
+
+
+
+/* ==========================================
+   TEXTO CARD
+========================================== */
+
+.card p{
+
+  color:#555;
+
+  line-height:1.5;
+
+  min-height:70px;
+
+}
+
+
+
+
+
+/* ==========================================
+   BOTÃO CARD
+========================================== */
+
+.card button{
+
+  margin-top:15px;
+
+  width:45px;
+
+  height:45px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#2f80ed;
+
+  color:white;
+
+  font-size:22px;
+
+  cursor:pointer;
+
+}
+
+
+
+
+
+/* ==========================================
+   FOOTER GLASS
+========================================== */
+
+.footer{
+
+  margin-top:60px;
+
+  padding:35px 20px;
+
+  text-align:center;
+
+}
+
+
+
+
+
+/* ==========================================
+   ÁREA BOTÕES
+========================================== */
+
+.footer-buttons{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+  flex-wrap:wrap;
+
+}
+
+
+
+
+
+/* ==========================================
+   BOTÕES FOOTER
+========================================== */
+
+.footer-buttons button{
+
+  background:
+  rgba(255,255,255,0.18);
+
+  backdrop-filter:blur(12px);
+
+  -webkit-backdrop-filter:blur(12px);
+
+  border:
+  1px solid rgba(255,255,255,0.25);
+
+  color:#1d3c72;
+
+  padding:14px 24px;
+
+  border-radius:18px;
+
+  font-size:15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+  transition:0.35s ease;
+
+  box-shadow:
+  0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+
+
+
+
+/* HOVER */
+
+.footer-buttons button:hover{
+
+  transform:
+  translateY(-5px) scale(1.04);
+
+  background:
+  rgba(255,255,255,0.28);
+
+  box-shadow:
+  0 15px 35px rgba(47,128,237,0.25);
+
+  color:#2f80ed;
+
+}
+
+
+
+
+
+/* ==========================================
+   ÍCONES FOOTER
+========================================== */
+
+.icon-footer{
+
+  opacity:0.45;
+
+  margin-right:8px;
+
+  font-size:16px;
+
+}
+
+
+
+
+
+/* ==========================================
+   TEXTO FOOTER
+========================================== */
+
+.footer-text{
+
+  margin-top:22px;
+
+  color:#111;
+
+  font-size:15px;
+
+}
+
+
+
+
+
+/* ==========================================
+   COPYRIGHT
+========================================== */
+
+.footer-copy{
+
+  margin-top:10px;
+
+  color:#7f8aa3;
+
+  font-size:13px;
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media(max-width:900px){
+
+  .hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+  }
+
+
+
+  .hero-image img{
+
+    width:280px;
+
+    margin-top:20px;
+
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:600px){
+
+  .footer{
+
+    padding:30px 15px;
+
+  }
+
+
+
+  .footer-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:14px;
+
+  }
+
+
+
+  .footer-buttons button{
+
+    width:100%;
+
+    max-width:320px;
+
+    padding:15px;
+
+    font-size:15px;
+
+    border-radius:16px;
+
+  }
+
+
+
+  .footer-text{
+
+    font-size:14px;
+
+    margin-top:18px;
+
+  }
+
+
+
+  .footer-copy{
+
+    font-size:12px;
+
+    margin-top:8px;
+
+  }
+
+}

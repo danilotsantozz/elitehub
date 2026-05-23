@@ -1,0 +1,415 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Calibri, Arial, sans-serif;
+}
+
+
+
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+  height:100vh;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+    to bottom,
+    #fcfcfd,
+    #bfc4ff
+  );
+
+  position:relative;
+
+}
+
+
+
+
+
+/* ==========================================
+   FUNDO DECORATIVO
+========================================== */
+
+body::before{
+
+  content:"";
+
+  position:absolute;
+
+  width:500px;
+
+  height:500px;
+
+  background:
+  rgba(47,128,237,0.15);
+
+  border-radius:50%;
+
+  top:-120px;
+
+  right:-120px;
+
+  filter:blur(50px);
+
+}
+
+
+
+body::after{
+
+  content:"";
+
+  position:absolute;
+
+  width:400px;
+
+  height:400px;
+
+  background:
+  rgba(255,255,255,0.3);
+
+  border-radius:50%;
+
+  bottom:-120px;
+
+  left:-120px;
+
+  filter:blur(50px);
+
+}
+
+
+
+
+
+/* ==========================================
+   LOGIN BOX
+========================================== */
+
+.login-box{
+
+  position:relative;
+
+  width:380px;
+
+  padding:40px 30px;
+
+  border-radius:28px;
+
+  background:white;
+
+  border:
+  1px solid #d8e6ff;
+
+  box-shadow:
+  0 18px 40px rgba(47,128,237,0.18);
+
+  text-align:center;
+
+  z-index:2;
+
+  animation:aparecer 1s ease;
+
+}
+
+
+
+
+
+/* ==========================================
+   ANIMAÇÃO
+========================================== */
+
+@keyframes aparecer{
+
+  from{
+
+    opacity:0;
+
+    transform:
+    translateY(60px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:
+    translateY(0);
+
+  }
+
+}
+
+
+
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+  width:90px;
+
+  height:90px;
+
+  margin:auto;
+
+  margin-bottom:20px;
+
+  border-radius:50%;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2f80ed,
+    #6ea8ff
+  );
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  color:white;
+
+  font-size:38px;
+
+  box-shadow:
+  0 10px 30px rgba(47,128,237,0.35);
+
+}
+
+
+
+
+
+/* ==========================================
+   TÍTULO
+========================================== */
+
+.login-box h1{
+
+  color:#17325c;
+
+  font-size:36px;
+
+  margin-bottom:8px;
+
+}
+
+
+
+.login-box p{
+
+  color:#4f5d75;
+
+  margin-bottom:28px;
+
+  font-size:15px;
+
+}
+
+
+
+
+
+/* ==========================================
+   INPUT BOX
+========================================== */
+
+.input-box{
+
+  position:relative;
+
+  margin-bottom:20px;
+
+}
+
+
+
+
+
+/* ÍCONE */
+
+.input-box i{
+
+  position:absolute;
+
+  left:16px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  color:#2f80ed;
+
+  font-size:15px;
+
+}
+
+
+
+
+
+/* INPUT */
+
+.input-box input{
+
+  width:100%;
+
+  padding:15px 15px 15px 48px;
+
+  border:
+  2px solid #dbe8ff;
+
+  border-radius:16px;
+
+  outline:none;
+
+  font-size:15px;
+
+  background:#f9fbff;
+
+  transition:0.3s;
+
+}
+
+
+
+
+
+/* INPUT FOCUS */
+
+.input-box input:focus{
+
+  border-color:#2f80ed;
+
+  box-shadow:
+  0 0 12px rgba(47,128,237,0.2);
+
+}
+
+
+
+
+
+/* ==========================================
+   BOTÃO
+========================================== */
+
+.login-box button{
+
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:18px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #2f80ed,
+    #6ea8ff
+  );
+
+  color:white;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:0.35s;
+
+  box-shadow:
+  0 10px 25px rgba(47,128,237,0.25);
+
+}
+
+
+
+
+
+/* HOVER */
+
+.login-box button:hover{
+
+  transform:
+  translateY(-4px) scale(1.02);
+
+  box-shadow:
+  0 15px 35px rgba(47,128,237,0.35);
+
+}
+
+
+
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+#status{
+
+  margin-top:18px;
+
+  font-size:14px;
+
+  font-weight:600;
+
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media(max-width:500px){
+
+  .login-box{
+
+    width:92%;
+
+    padding:35px 22px;
+
+  }
+
+
+
+  .login-box h1{
+
+    font-size:30px;
+
+  }
+
+}
