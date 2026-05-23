@@ -205,7 +205,7 @@ function fazerLogin(){
     // abrir página principal
     setTimeout(()=>{
 
-  window.location.href = "../hub.html";
+  window.location.href = "hub.html";
 
 },1200);
 
